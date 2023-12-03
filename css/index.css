@@ -336,6 +336,11 @@ button {
     cursor: pointer;
   }
 }
+.hero__button-left:hover {
+  color: #00a0c1;
+  border: 1px solid #00a0c1;
+  background: transparent;
+}
 
 @media screen and (max-width: 767px) {
   .hero__button-right {
@@ -381,6 +386,11 @@ button {
     border-radius: 37px;
     cursor: pointer;
   }
+}
+.hero__button-right:hover {
+  color: #ffffff;
+  background: #ffa62b;
+  border: none;
 }
 
 @media screen and (max-width: 767px) {
