@@ -184,7 +184,7 @@
   }
 }
 
-.hero__button-left {
+.hero__button {
   @media screen and (max-width: 767px) {
     width: 186px;
     height: 48px;
@@ -235,56 +235,6 @@
     color: $button-color2;
     border: 1px solid $button-color2;
     background: transparent;
-  }
-}
-
-.hero__button-right {
-  @media screen and (max-width: 767px) {
-    width: 154px;
-    height: 48px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 2;
-    letter-spacing: 0.2px;
-    color: $button-color2;
-    border: 1px solid $button-color2;
-    border-radius: 37px;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 154px;
-    height: 48px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 2;
-    letter-spacing: 0.2px;
-    color: $button-color2;
-    border: 1px solid $button-color2;
-    border-radius: 37px;
-    cursor: pointer;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 154px;
-    height: 48px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 2;
-    letter-spacing: 0.2px;
-    color: $button-color2;
-    border: 1px solid $button-color2;
-    border-radius: 37px;
-    cursor: pointer;
-  }
-
-  &:hover {
-    color: $button-color3;
-    background: $button-color1;
-    border: none;
   }
 }
 
@@ -428,6 +378,12 @@
     width: 330px;
     height: 200px;
   }
+}
+
+.company__box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .company__icon {

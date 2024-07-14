@@ -288,7 +288,7 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-  .hero__button-left {
+  .hero__button {
     width: 186px;
     height: 48px;
     font-weight: 700;
@@ -305,7 +305,7 @@ button {
   }
 }
 @media screen and (min-width: 768px) {
-  .hero__button-left {
+  .hero__button {
     width: 186px;
     height: 48px;
     font-weight: 700;
@@ -321,7 +321,7 @@ button {
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero__button-left {
+  .hero__button {
     width: 186px;
     height: 48px;
     font-weight: 700;
@@ -336,61 +336,10 @@ button {
     cursor: pointer;
   }
 }
-.hero__button-left:hover {
+.hero__button:hover {
   color: #00a0c1;
   border: 1px solid #00a0c1;
   background: transparent;
-}
-
-@media screen and (max-width: 767px) {
-  .hero__button-right {
-    width: 154px;
-    height: 48px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 2;
-    letter-spacing: 0.2px;
-    color: #00a0c1;
-    border: 1px solid #00a0c1;
-    border-radius: 37px;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero__button-right {
-    width: 154px;
-    height: 48px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 2;
-    letter-spacing: 0.2px;
-    color: #00a0c1;
-    border: 1px solid #00a0c1;
-    border-radius: 37px;
-    cursor: pointer;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero__button-right {
-    width: 154px;
-    height: 48px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 2;
-    letter-spacing: 0.2px;
-    color: #00a0c1;
-    border: 1px solid #00a0c1;
-    border-radius: 37px;
-    cursor: pointer;
-  }
-}
-.hero__button-right:hover {
-  color: #ffffff;
-  background: #ffa62b;
-  border: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -530,6 +479,16 @@ button {
     width: 330px;
     height: 200px;
   }
+}
+
+.company__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
 }
 
 .company__icon {
