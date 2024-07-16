@@ -4,6 +4,11 @@
   padding-top: 20px;
 }
 
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header__nav {
   display: flex;
   align-items: center;
@@ -51,6 +56,131 @@
   &--active:focus {
     color: $link-color1;
   }
+}
+
+/* Menu Button */
+
+.menu-open__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  transition: transform $transition;
+}
+
+.menu-open__button:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 1280px) {
+  .menu-open__button {
+    display: none;
+  }
+}
+
+/* Mobile Menu container */
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 64vw;
+  height: 100%;
+  padding: 20px;
+  background-color: $company-bg-color;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform $transition;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    width: 50vw;
+  }
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-close__button {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  outline: transparent;
+  fill: $white-bg-color;
+  background-color: transparent;
+  border: none;
+  transition: transform $transition;
+}
+
+.menu-close__button:hover {
+  transform: scale(1.1);
+}
+
+/* Menu Navigation Styles */
+
+.menu__nav {
+  margin-top: 35vh;
+}
+
+.menu__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.menu__nav-link {
+  position: relative;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.28em;
+  color: $white-bg-color;
+  transition: letter-spacing $transition;
+}
+
+.menu__nav-link:hover {
+  letter-spacing: 2px;
+}
+
+/* Backdrop */
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.backdrop {
+  position: fixed;
+  min-width: 320px;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(18, 20, 23, 0.4);
+  transition: opacity $transition, visibility $transition;
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: all $transition;
 }
 
 .hero {

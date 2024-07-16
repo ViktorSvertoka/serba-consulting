@@ -86,6 +86,15 @@ button {
   padding-top: 20px;
 }
 
+.header__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,6 +149,165 @@ button {
 }
 .header__link--active:hover, .header__link--active:focus {
   color: #00a0c1;
+}
+
+/* Menu Button */
+.menu-open__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  border: none;
+  -webkit-transition: -webkit-transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-open__button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media screen and (min-width: 1280px) {
+  .menu-open__button {
+    display: none;
+  }
+}
+/* Mobile Menu container */
+.menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 64vw;
+  height: 100%;
+  padding: 20px;
+  background-color: #00a0c1;
+  z-index: 999;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    width: 50vw;
+  }
+}
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu-close__button {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  outline: transparent;
+  fill: #ffffff;
+  background-color: transparent;
+  border: none;
+  -webkit-transition: -webkit-transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-close__button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/* Menu Navigation Styles */
+.menu__nav {
+  margin-top: 35vh;
+}
+
+.menu__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.menu__nav-link {
+  position: relative;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.28em;
+  color: #ffffff;
+  -webkit-transition: letter-spacing 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: letter-spacing 750ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu__nav-link:hover {
+  letter-spacing: 2px;
+}
+
+/* Backdrop */
+body.no-scroll {
+  overflow: hidden;
+}
+
+.backdrop {
+  position: fixed;
+  min-width: 320px;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(18, 20, 23, 0.4);
+  -webkit-transition: opacity 750ms cubic-bezier(0.4, 0, 0.2, 1), visibility 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 750ms cubic-bezier(0.4, 0, 0.2, 1), visibility 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  -webkit-transition: all 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 750ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero {

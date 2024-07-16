@@ -35,8 +35,67 @@
               </li>
               <li class="header__item header__item--pseudo">
                 <a class="header__link header__link--active" href="##"
-                  >Contact</a
+                  >Contacts</a
                 >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Mobile Menu -->
+
+          <button
+            class="menu-open__button js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-open-btn
+          >
+            <svg
+              class="menu-open__icon"
+              width="32"
+              height="23"
+              stroke="var(--color-black)"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+              role="img"
+            >
+              <use
+                class="menu-open__use"
+                xlink:href="./images/sprites.svg#icon-burger-menu"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu container -->
+      <div class="backdrop is-hidden" data-menu-backdrop>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button
+            type="button"
+            class="menu-close__button js-close-menu"
+            data-menu-close-btn
+          >
+            <svg class="menu-close__icon" width="32" height="32">
+              <use href="./sprite.svg#icon-x-close"></use>
+            </svg>
+          </button>
+
+          <!-- Mobile Menu Navigation  -->
+
+          <nav class="menu__nav">
+            <ul class="menu__nav-list">
+              <li class="menu__nav-item">
+                <a class="menu__nav-link" href="#home">Home</a>
+              </li>
+              <li class="menu__nav-item">
+                <a class="menu__nav-link" href="#services">Services</a>
+              </li>
+              <li class="menu__nav-item">
+                <a class="menu__nav-link" href="#products">Products</a>
+              </li>
+              <li class="menu__nav-item">
+                <a class="menu__nav-link" href="#contacts">Contacts</a>
               </li>
             </ul>
           </nav>
@@ -522,5 +581,6 @@
         </ul>
       </div>
     </footer> -->
+    <script type="module" src="./mobile-menu.js"></script>
   </body>
 </html>

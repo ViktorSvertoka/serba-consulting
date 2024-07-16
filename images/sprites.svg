@@ -3,6 +3,11 @@
 <symbol id="icon-burger-menu" viewBox="0 0 55 32">
 <path d="M1.306 0h52.245v5.224h-52.245v-5.224zM14.367 13.061h39.184v5.224h-39.184v-5.224zM30.694 26.122h22.857v5.224h-22.857v-5.224z"></path>
 </symbol>
+
+<symbol id="icon-x-close" viewBox="0 0 32 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M24 8l-16 16"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M8 8l16 16"></path>
+</symbol>
 <symbol id="icon-choose-1" viewBox="0 0 33 32">
 <path fill="#00a0c1" style="fill: var(--color1, #00a0c1)" d="M16.56 15.201c2.869 0 5.101-2.33 5.101-5.19s-2.338-5.084-5.208-5.084c-2.869 0-5.101 2.33-5.101 5.084 0 2.86 2.338 5.19 5.208 5.19zM16.454 7.046c0.106 0 0.106 0 0 0 1.7 0 3.082 1.377 3.082 3.072s-1.382 2.966-3.082 2.966c-1.7 0-2.976-1.377-2.976-2.966 0-1.695 1.382-3.072 2.976-3.072z"></path>
 <path fill="#00a0c1" style="fill: var(--color1, #00a0c1)" d="M32.289 14.566c-2.019-1.801-4.676-2.754-7.439-2.648h-0.85c-0.213 0.847-0.531 1.589-0.957 2.224 0.638-0.106 1.169-0.106 1.807-0.106 2.019-0.106 4.039 0.53 5.633 1.695v7.626h2.126v-8.474l-0.319-0.318z"></path>
