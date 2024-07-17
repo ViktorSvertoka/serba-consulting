@@ -520,7 +520,7 @@ body.no-scroll {
 
 @media screen and (max-width: 767px) {
   .company {
-    padding-top: 100px;
+    padding-top: 60px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -693,8 +693,7 @@ body.no-scroll {
 
 @media screen and (max-width: 767px) {
   .choose {
-    padding-top: 140px;
-    padding-bottom: 100px;
+    padding-top: 40px;
   }
 }
 @media screen and (min-width: 768px) {
