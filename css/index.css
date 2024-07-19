@@ -1445,6 +1445,7 @@ body.no-scroll {
   text-align: center;
   letter-spacing: 0.2px;
   color: #ffa62b;
+  cursor: pointer;
 }
 
 .support__item-center {
@@ -1496,6 +1497,7 @@ body.no-scroll {
   text-align: center;
   letter-spacing: 0.2px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .consulting {
@@ -1636,7 +1638,7 @@ body.no-scroll {
   margin-right: 20px;
 }
 
-.backdrop {
+.js-backdrop {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -1646,11 +1648,15 @@ body.no-scroll {
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop.is-hidden {
+.js-backdrop.js-hidden {
   opacity: 0;
   pointer-events: none;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.js-no-scroll {
+  overflow: hidden;
 }
 
 .modal {
