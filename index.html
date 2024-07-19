@@ -589,14 +589,16 @@
           class="modal__button-close modal__button-close--active"
         >
           <svg class="modal__icon" width="11px" height="11px">
-            <use href="./images/icons.svg#icon-modal-x"></use>
+            <use href="./images/sprites.svg#icon-modal-close"></use>
           </svg>
         </button>
-        <h3 class="modal__title">Залиште свої дані, ми вам передзвонимо</h3>
+        <h3 class="modal__title">
+          Leave your contact details, and we will call you back.
+        </h3>
         <form class="modal-form" action="">
           <ul class="modal-form__list">
             <li class="modal-form__item">
-              <label class="modal-form__contacts">Ім'я</label>
+              <label class="modal-form__contacts">Name</label>
               <div
                 class="modal-form__field-name modal-form__field-name--active"
               >
@@ -606,12 +608,12 @@
                   name="username"
                 />
                 <svg class="modal-form__icon-name" width="12px" height="12px">
-                  <use href="./images/icons.svg#icon-modal-face"></use>
+                  <use href="./images/sprites.svg#icon-modal-face"></use>
                 </svg>
               </div>
             </li>
             <li class="modal-form__item">
-              <label class="modal-form__contacts">Телефон</label>
+              <label class="modal-form__contacts">Phone</label>
               <div class="modal-form__field-tel modal-form__field-tel--active">
                 <input
                   class="modal-form__type-field modal-form__type-field--active"
@@ -619,12 +621,12 @@
                   name="phone-number"
                 />
                 <svg class="modal-form__icon-tel" width="13px" height="13px">
-                  <use href="./images/icons.svg#icon-modal-phone"></use>
+                  <use href="./images/sprites.svg#icon-modal-phone"></use>
                 </svg>
               </div>
             </li>
             <li class="modal-form__item">
-              <label class="modal-form__contacts">Пошта</label>
+              <label class="modal-form__contacts">Email</label>
               <div
                 class="modal-form__field-email modal-form__field-email--active"
               >
@@ -634,18 +636,18 @@
                   name="email"
                 />
                 <svg class="modal-form__icon-email" width="15px" height="12px">
-                  <use href="./images/icons.svg#icon-modal-mail"></use>
+                  <use href="./images/sprites.svg#icon-modal-mail"></use>
                 </svg>
               </div>
             </li>
           </ul>
           <div class="modal-container">
-            <label class="modal-container__comment">Коментар</label>
+            <label class="modal-container__comment">Comment</label>
             <textarea
               class="modal-container__text modal-container__text--active"
               name="feedback"
               rows=""
-              placeholder="Введіть текст"
+              placeholder="Enter the text"
             ></textarea>
           </div>
           <label class="modal-block">
@@ -656,13 +658,13 @@
               value="accept"
             />
             <span class="modal-block__icon-white"></span>
-            Погоджуюся з розсилкою та приймаю
-            <a class="modal-block__link-terms" href="">Умови договору</a>
+            I agree with the mailing and accept it
+            <a class="modal-block__link-terms" href=""
+              >Conditions of the contract</a
+            >
           </label>
           <div class="modal-submit">
-            <button class="modal-submit__button" type="submit">
-              Відправити
-            </button>
+            <button class="modal-submit__button" type="submit">Send</button>
           </div>
         </form>
       </div>
