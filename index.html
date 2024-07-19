@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Serba Consulting Web Site" />
     <title>Serba Consulting</title>
     <link rel="shortcut icon" href="./images/serba-favicon.png" />
     <link rel="stylesheet" href="./css/index.min.css" />
@@ -110,7 +111,7 @@
             We know how large objects will act, but things on a small scale.
           </p>
           <div class="hero__wrapper">
-            <button class="hero__button">Get Quote Now</button>
+            <button class="hero__button" data-modal-open>Get Quote Now</button>
           </div>
         </div>
       </section>
@@ -579,6 +580,94 @@
         </ul>
       </div>
     </footer> -->
+    <!--modal window-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button
+          type="button"
+          data-modal-close
+          class="modal__button-close modal__button-close--active"
+        >
+          <svg class="modal__icon" width="11px" height="11px">
+            <use href="./images/icons.svg#icon-modal-x"></use>
+          </svg>
+        </button>
+        <h3 class="modal__title">Залиште свої дані, ми вам передзвонимо</h3>
+        <form class="modal-form" action="">
+          <ul class="modal-form__list">
+            <li class="modal-form__item">
+              <label class="modal-form__contacts">Ім'я</label>
+              <div
+                class="modal-form__field-name modal-form__field-name--active"
+              >
+                <input
+                  class="modal-form__type-field modal-form__type-field--active"
+                  type="text"
+                  name="username"
+                />
+                <svg class="modal-form__icon-name" width="12px" height="12px">
+                  <use href="./images/icons.svg#icon-modal-face"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="modal-form__item">
+              <label class="modal-form__contacts">Телефон</label>
+              <div class="modal-form__field-tel modal-form__field-tel--active">
+                <input
+                  class="modal-form__type-field modal-form__type-field--active"
+                  type="tel"
+                  name="phone-number"
+                />
+                <svg class="modal-form__icon-tel" width="13px" height="13px">
+                  <use href="./images/icons.svg#icon-modal-phone"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="modal-form__item">
+              <label class="modal-form__contacts">Пошта</label>
+              <div
+                class="modal-form__field-email modal-form__field-email--active"
+              >
+                <input
+                  class="modal-form__type-field modal-form__type-field--active"
+                  type="email"
+                  name="email"
+                />
+                <svg class="modal-form__icon-email" width="15px" height="12px">
+                  <use href="./images/icons.svg#icon-modal-mail"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+          <div class="modal-container">
+            <label class="modal-container__comment">Коментар</label>
+            <textarea
+              class="modal-container__text modal-container__text--active"
+              name="feedback"
+              rows=""
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+          <label class="modal-block">
+            <input
+              class="modal-block__checkbox modal-block__checkbox--active"
+              type="checkbox"
+              name="mailing-list"
+              value="accept"
+            />
+            <span class="modal-block__icon-white"></span>
+            Погоджуюся з розсилкою та приймаю
+            <a class="modal-block__link-terms" href="">Умови договору</a>
+          </label>
+          <div class="modal-submit">
+            <button class="modal-submit__button" type="submit">
+              Відправити
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
     <script type="module" src="./mobile-menu.js"></script>
+    <script type="module" src="./modal-window.js"></script>
   </body>
 </html>

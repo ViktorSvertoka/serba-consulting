@@ -21,7 +21,7 @@
   transform: translate(-50%, -50%);
   width: 320px;
   min-height: 581px;
-  background: $primary-white-color;
+  background: $white-bg-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -57,7 +57,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: $primary-white-color;
+  background: $white-bg-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
@@ -66,7 +66,7 @@
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &--active:hover {
-    fill: $accent-color;
+    fill: $accent-bg-color;
   }
 }
 
@@ -77,7 +77,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  color: $primary-text-color;
+  color: $title-color-black;
 
   @media screen and (min-width: 320px) {
     font-size: 16px;
@@ -109,7 +109,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
-  color: $title-text-color;
+  color: $title-color-black;
 }
 
 .modal-form__type-field {
@@ -124,7 +124,7 @@
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &--active:focus {
-    border-color: $accent-color;
+    border-color: $accent-bg-color;
   }
 }
 
@@ -142,8 +142,8 @@
 }
 
 .modal-form__field-name--active:focus-within > .modal-form__icon-name {
-  border-color: $accent-color;
-  fill: $accent-color;
+  border-color: $accent-bg-color;
+  fill: $accent-bg-color;
 }
 
 .modal-form__field-tel {
@@ -160,8 +160,8 @@
 }
 
 .modal-form__field-tel--active:focus-within > .modal-form__icon-tel {
-  border-color: $accent-color;
-  fill: $accent-color;
+  border-color: $accent-bg-color;
+  fill: $accent-bg-color;
 }
 
 .modal-form__field-email {
@@ -178,8 +178,8 @@
 }
 
 .modal-form__field-email--active:focus-within > .modal-form__icon-email {
-  border-color: $accent-color;
-  fill: $accent-color;
+  border-color: $accent-bg-color;
+  fill: $accent-bg-color;
 }
 
 .modal-container {
@@ -201,7 +201,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
-  color: $title-text-color;
+  color: $title-color-black;
 }
 
 .modal-container__text {
@@ -209,12 +209,12 @@
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  color: $title-text-color;
+  color: $title-color-black;
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &--active:focus-within {
-    border-color: $accent-color;
+    border-color: $accent-bg-color;
     box-shadow: none;
   }
 
@@ -237,7 +237,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: $title-text-color;
+  color: $title-color-black;
   margin-right: 8px;
   display: flex;
   align-items: center;
@@ -281,12 +281,12 @@
   margin-left: 17px;
   margin-right: 7px;
   cursor: pointer;
-  border: 2px solid $primary-text-color;
+  border: 2px solid $title-color-black;
   border-radius: 4px;
 }
 
 .modal-block__checkbox--active:checked + .modal-block__icon-white {
-  background-color: $accent-color;
+  background-color: $accent-bg-color;
   border-color: transparent;
   background-image: url(../images/icon-check.svg);
   background-size: contain;
@@ -298,7 +298,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: $accent-color;
+  color: $accent-bg-color;
   margin-left: 2px;
 
   @media screen and (min-width: 320px) {
@@ -330,11 +330,11 @@
   font-size: 16px;
   line-height: 1.88;
   text-align: center;
-  color: $primary-white-color;
+  color: $white-bg-color;
   width: 200px;
   height: 50px;
   border: transparent;
-  background: $accent-color;
+  background: $accent-bg-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   letter-spacing: 0.06em;
