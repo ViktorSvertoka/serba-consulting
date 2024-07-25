@@ -732,12 +732,14 @@ body.no-scroll {
 }
 
 .practice {
+  background-color: $support-bg-color;
   padding-top: 120px;
   padding-bottom: 80px;
 }
 
 .practice__title {
   @media screen and (max-width: 767px) {
+    color: $title-color-white;
     font-weight: 700;
     font-size: 40px;
     line-height: 1.42;
@@ -749,6 +751,7 @@ body.no-scroll {
   }
 
   @media screen and (min-width: 768px) {
+    color: $title-color-white;
     font-weight: 700;
     font-size: 40px;
     line-height: 1.42;
@@ -758,6 +761,7 @@ body.no-scroll {
   }
 
   @media screen and (min-width: 1200px) {
+    color: $title-color-white;
     font-weight: 700;
     font-size: 40px;
     line-height: 1.42;
@@ -776,7 +780,7 @@ body.no-scroll {
     line-height: 1.43;
     text-align: center;
     letter-spacing: 0.2px;
-    color: $main-text-color;
+    color: $main-text-color2;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -791,7 +795,7 @@ body.no-scroll {
     line-height: 1.43;
     text-align: center;
     letter-spacing: 0.2px;
-    color: $main-text-color;
+    color: $main-text-color2;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -805,7 +809,7 @@ body.no-scroll {
     line-height: 1.43;
     text-align: center;
     letter-spacing: 0.2px;
-    color: $main-text-color;
+    color: $main-text-color2;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -1020,56 +1024,6 @@ body.no-scroll {
   }
 }
 
-.newsletter {
-  height: 80px;
-  background-color: $support-bg-color;
-}
-
-.newsletter__wrap {
-  position: absolute;
-  top: 3300px;
-  display: flex;
-  align-items: flex-start;
-  padding: 30px 50px;
-  width: 986px;
-  height: 124px;
-  background-color: $accent-bg-color;
-  border-radius: 2px;
-}
-
-.newsletter__title {
-  width: 260px;
-  height: 64px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.33;
-  letter-spacing: 0.1px;
-  color: $title-color-white;
-  margin-right: 180px;
-}
-
-.newsletter__input {
-  width: 330px;
-  height: 60px;
-  background: #f9f9f9;
-  border: 1px solid #e6e6e6;
-  border-radius: 5px 0px 0px 5px;
-}
-
-.newsletter__button {
-  width: 120px;
-  height: 60px;
-  background: #ffa62b;
-  border: 1px solid #e6e6e6;
-  border-radius: 0px 5px 5px 0px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 2;
-  text-align: center;
-  letter-spacing: 0.2px;
-  color: $button-color3;
-}
-
 .support {
   padding-top: 80px;
   padding-bottom: 150px;
@@ -1215,21 +1169,35 @@ body.no-scroll {
 }
 
 .address {
-  height: 280px;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: $accent-bg-color;
 }
 
 .address__wrap {
-  display: flex;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .address__list {
-  margin-right: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 60px;
 
-  &--pseudo:last-child {
-    margin-right: 0;
+    &--pseudo:last-child {
+      margin-right: 0;
+    }
   }
 }
 
