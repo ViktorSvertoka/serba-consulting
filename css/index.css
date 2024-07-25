@@ -1638,6 +1638,33 @@ body.no-scroll {
   margin-right: 20px;
 }
 
+@-webkit-keyframes Scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@keyframes Scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+.footer__heart {
+  margin: 0 2px 0 2px;
+  -webkit-animation: Scale 0.7s ease infinite alternate;
+          animation: Scale 0.7s ease infinite alternate;
+}
+
 .js-backdrop {
   position: fixed;
   width: 100vw;
