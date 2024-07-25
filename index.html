@@ -547,6 +547,7 @@
         </div>
       </section> -->
     </main>
+
     <!-- <footer class="footer">
       <div class="footer__container container">
         <h2 class="footer__hidden hidden"></h2>
@@ -599,7 +600,16 @@
         <h3 class="modal__title">
           Leave your contact details, and we will call you back.
         </h3>
-        <form class="modal-form" action="">
+        <form
+          class="modal-form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="10ad8243-f9c1-4ae4-ade9-aea832e9e732"
+          />
           <ul class="modal-form__list">
             <li class="modal-form__item">
               <label class="modal-form__contacts">Name</label>
@@ -608,8 +618,10 @@
               >
                 <input
                   class="modal-form__type-field modal-form__type-field--active"
-                  type="text"
-                  name="username"
+                  name="name"
+                  required
+                  placeholder="Enter your name..."
+                  autocomplete="off"
                 />
                 <svg class="modal-form__icon-name" width="12px" height="12px">
                   <use href="./images/sprites.svg#icon-modal-face"></use>
@@ -621,8 +633,10 @@
               <div class="modal-form__field-tel modal-form__field-tel--active">
                 <input
                   class="modal-form__type-field modal-form__type-field--active"
-                  type="tel"
-                  name="phone-number"
+                  name="number"
+                  required
+                  placeholder="Enter your number..."
+                  autocomplete="off"
                 />
                 <svg class="modal-form__icon-tel" width="13px" height="13px">
                   <use href="./images/sprites.svg#icon-modal-phone"></use>
@@ -636,8 +650,10 @@
               >
                 <input
                   class="modal-form__type-field modal-form__type-field--active"
-                  type="email"
                   name="email"
+                  required
+                  placeholder="Enter your email..."
+                  autocomplete="off"
                 />
                 <svg class="modal-form__icon-email" width="15px" height="12px">
                   <use href="./images/sprites.svg#icon-modal-mail"></use>
@@ -651,7 +667,8 @@
               class="modal-container__text modal-container__text--active"
               name="feedback"
               rows=""
-              placeholder="Enter the text"
+              placeholder="Enter the text..."
+              autocomplete="off"
             ></textarea>
           </div>
           <label class="modal-block">
@@ -660,12 +677,14 @@
               type="checkbox"
               name="mailing-list"
               value="accept"
+              required
+              autocomplete="off"
             />
             <span class="modal-block__icon-white"></span>
-            I agree with the mailing and accept it
-            <a class="modal-block__link-terms" href=""
+            I give my consent to the processing of personal data.
+            <!-- <a class="modal-block__link-terms" href=""
               >Conditions of the contract</a
-            >
+            > -->
           </label>
           <div class="modal-submit">
             <button class="modal-submit__button" type="submit">Send</button>
