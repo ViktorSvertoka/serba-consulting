@@ -1214,47 +1214,6 @@ body.no-scroll {
   cursor: pointer;
 }
 
-.consulting {
-  height: 150px;
-  background-color: $white-bg-color;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.consulting__container {
-  display: flex;
-}
-
-.consulting__title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.33;
-  letter-spacing: 0.1px;
-  margin-bottom: 10px;
-}
-
-.consulting__subtitle {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.43;
-  letter-spacing: 0.2px;
-  color: $main-text-color;
-}
-
-.consulting__button {
-  margin-left: auto;
-  width: 160px;
-  height: 58px;
-  background-color: $button-color1;
-  border-radius: 5px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 2;
-  text-align: center;
-  letter-spacing: 0.2px;
-  color: $button-color3;
-}
-
 .address {
   height: 280px;
   padding-top: 50px;
