@@ -8,6 +8,10 @@
     <link rel="shortcut icon" href="./images/serba-favicon.png" />
     <link rel="stylesheet" href="./css/index.min.css" />
     <script type="module" src="./index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -106,7 +110,13 @@
     <main>
       <section class="hero">
         <div class="hero__container container">
-          <h1 class="hero__title">EMPOWER YOUR BUSINESS</h1>
+          <h1
+            class="hero__title wow animate__animated animate__backInLeft"
+            data-wow-duration="1s"
+            data-wow-delay="0.3s"
+          >
+            EMPOWER YOUR BUSINESS
+          </h1>
           <p class="hero__subtitle">
             We know how large objects will act, but things on a small scale.
           </p>
@@ -119,7 +129,11 @@
         <div class="company__container container">
           <h2 class="company__hidden hidden"></h2>
           <ul class="company__wrapper">
-            <li class="company__link company__link--active">
+            <li
+              class="company__link company__link--active wow animate__animated animate__fadeInLeftBig"
+              data-wow-duration="1s"
+              data-wow-delay="0.9s"
+            >
               <div class="company__wrap company__wrap--pseudo">
                 <div class="company__box">
                   <svg class="company__icon" width="25px" height="25px">
@@ -134,7 +148,11 @@
                 </p>
               </div>
             </li>
-            <li class="company__link company__link--active">
+            <li
+              class="company__link company__link--active wow animate__animated animate__fadeInLeftBig"
+              data-wow-duration="1s"
+              data-wow-delay="0.7s"
+            >
               <div class="company__wrap company__wrap--pseudo">
                 <div class="company__box">
                   <svg class="company__icon" width="25px" height="25px">
@@ -149,7 +167,11 @@
                 </p>
               </div>
             </li>
-            <li class="company__link company__link--active">
+            <li
+              class="company__link company__link--active wow animate__animated animate__fadeInLeftBig"
+              data-wow-duration="1s"
+              data-wow-delay="0.5s"
+            >
               <div class="company__wrap company__wrap--pseudo">
                 <div class="company__box">
                   <svg class="company__icon" width="25px" height="25px">
@@ -169,12 +191,16 @@
       </section>
       <section class="choose">
         <div class="choose__container container">
-          <h2 class="choose__title">WHY CHOOSE US</h2>
+          <h2 class="choose__title">Why Choose Us</h2>
           <p class="choose__subtitle">
             Problems trying to resolve the conflict between the two major realms
             of Classical physics: Newtonian mechanics
           </p>
-          <ul class="choose__list">
+          <ul
+            class="choose__list wow animate__animated animate__bounceInDown"
+            data-wow-duration="1s"
+            data-wow-delay="0.3s"
+          >
             <li class="choose__item choose__item--pseudo">
               <svg class="choose__icon" width="50px" height="50px">
                 <use href="./images/sprites.svg#icon-choose-1"></use>
@@ -213,7 +239,11 @@
             Problems trying to resolve the conflict between the two major realms
             of Classical physics: Newtonian mechanics
           </p>
-          <ul class="practice__list">
+          <ul
+            class="practice__list wow animate__animated animate__bounceInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.3s"
+          >
             <li class="practice__item practice__item--pseudo">
               <div class="practice__wrap">
                 <h3 class="practice__quote">A single source of truth</h3>
@@ -613,5 +643,10 @@
     </div>
     <script type="module" src="./mobile-menu.js"></script>
     <script type="module" src="./modal-window.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script type="module" src="./wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
