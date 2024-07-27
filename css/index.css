@@ -80,6 +80,10 @@ button {
   margin: -1px;
 }
 
+.is-hidden {
+  display: none;
+}
+
 .header {
   position: absolute;
   width: 100%;
