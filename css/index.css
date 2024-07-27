@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import '~node_modules/modern-normalize/modern-normalize.css';
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
 * {
@@ -81,7 +82,11 @@ button {
 }
 
 .is-hidden {
-  display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .header {
@@ -206,10 +211,10 @@ button {
   z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: -webkit-transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; /* Убедитесь, что transition настроен */
 }
 
 @media screen and (min-width: 768px) {
@@ -220,6 +225,11 @@ button {
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.menu-container.is-closing {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .menu-close__button {
@@ -243,10 +253,10 @@ button {
   fill: #ffffff;
   background-color: transparent;
   border: none;
-  -webkit-transition: -webkit-transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .menu-close__button:hover {
@@ -282,8 +292,8 @@ button {
   font-weight: 400;
   line-height: 1.28em;
   color: #ffffff;
-  -webkit-transition: letter-spacing 750ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: letter-spacing 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: letter-spacing 0.3s ease-in-out;
+  transition: letter-spacing 0.3s ease-in-out;
 }
 
 .menu__nav-link:hover {
@@ -307,8 +317,8 @@ body.no-scroll {
   width: 100vw;
   height: 100vh;
   background-color: rgba(18, 20, 23, 0.4);
-  -webkit-transition: opacity 750ms cubic-bezier(0.4, 0, 0.2, 1), visibility 750ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 750ms cubic-bezier(0.4, 0, 0.2, 1), visibility 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
@@ -318,8 +328,8 @@ body.no-scroll {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-  -webkit-transition: all 750ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: all 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 .hero {

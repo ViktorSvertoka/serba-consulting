@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeMenuButton = document.querySelector('.js-close-menu');
   const mobileMenu = document.querySelector('#mobile-menu');
   const backdrop = document.querySelector('[data-menu-backdrop]');
-  const menuNavLinks = document.querySelectorAll('.menu__nav-link');
 
   function openMobileMenu() {
     mobileMenu.classList.add('is-open');
@@ -12,9 +11,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function closeMobileMenu() {
-    mobileMenu.classList.remove('is-open');
+    mobileMenu.classList.add('is-closing');
     backdrop.classList.add('is-hidden');
     document.body.classList.remove('no-scroll');
+
+    mobileMenu.addEventListener('transitionend', handleTransitionEnd);
+  }
+
+  function handleTransitionEnd() {
+    mobileMenu.classList.remove('is-open', 'is-closing');
+    mobileMenu.removeEventListener('transitionend', handleTransitionEnd);
   }
 
   openMenuButton.addEventListener('click', openMobileMenu);
@@ -26,19 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  menuNavLinks.forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault();
-      const targetId = link.getAttribute('href').substring(1);
-      const targetSection = document.getElementById(targetId);
-
-      if (targetSection) {
-        closeMobileMenu();
-
-        setTimeout(() => {
-          targetSection.scrollIntoView({ behavior: 'smooth' });
-        }, 300);
-      }
-    });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('is-open')) {
+      closeMobileMenu();
+    }
   });
 });
