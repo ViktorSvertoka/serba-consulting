@@ -1472,7 +1472,7 @@ body.no-scroll {
 }
 
 @media screen and (max-width: 767px) {
-  .address__wrap {
+  .address__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1488,7 +1488,7 @@ body.no-scroll {
   }
 }
 @media screen and (min-width: 1200px) {
-  .address__wrap {
+  .address__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1498,12 +1498,9 @@ body.no-scroll {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .address__list {
-    margin-right: 60px;
-  }
-  .address__list--pseudo:last-child {
-    margin-right: 0;
+@media screen and (max-width: 767px) {
+  .address__item {
+    width: 200px;
   }
 }
 

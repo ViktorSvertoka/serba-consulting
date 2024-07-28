@@ -1179,7 +1179,7 @@ body.no-scroll {
   background-color: $accent-bg-color;
 }
 
-.address__wrap {
+.address__list {
   @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
@@ -1196,13 +1196,9 @@ body.no-scroll {
   }
 }
 
-.address__list {
-  @media screen and (min-width: 1200px) {
-    margin-right: 60px;
-
-    &--pseudo:last-child {
-      margin-right: 0;
-    }
+.address__item {
+  @media screen and (max-width: 767px) {
+    width: 200px;
   }
 }
 
