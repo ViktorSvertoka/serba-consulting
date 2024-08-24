@@ -554,8 +554,8 @@ body.no-scroll {
 
 .choose {
   @media screen and (max-width: 767px) {
-    padding-top: 40px;
-    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   @media screen and (min-width: 768px) {
@@ -738,8 +738,15 @@ body.no-scroll {
 
 .practice {
   background-color: $support-bg-color;
-  padding-top: 120px;
-  padding-bottom: 80px;
+  @media screen and (max-width: 767px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
 }
 
 .practice__title {
@@ -1030,8 +1037,15 @@ body.no-scroll {
 }
 
 .support {
-  padding-top: 80px;
-  padding-bottom: 150px;
+  @media screen and (max-width: 767px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 80px;
+    padding-bottom: 150px;
+  }
 }
 
 .support__title {
@@ -1087,15 +1101,21 @@ body.no-scroll {
 }
 
 .support__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px 40px;
-  gap: 15px;
-  width: 328px;
-  height: 333px;
-  background-color: $white-bg-color;
-  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 40px;
+    gap: 15px;
+    width: 328px;
+    height: 333px;
+    background-color: $white-bg-color;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  }
 }
 
 .support__link {
@@ -1280,4 +1300,8 @@ body.no-scroll {
 .footer__heart {
   margin: 0 2px 0 2px;
   animation: Scale 0.7s ease infinite alternate;
+}
+
+.footer__github {
+  color: $support-bg-color;
 }

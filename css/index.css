@@ -707,8 +707,8 @@ body.no-scroll {
 
 @media screen and (max-width: 767px) {
   .choose {
-    padding-top: 40px;
-    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -941,8 +941,18 @@ body.no-scroll {
 
 .practice {
   background-color: #252b42;
-  padding-top: 120px;
-  padding-bottom: 80px;
+}
+@media screen and (max-width: 767px) {
+  .practice {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .practice {
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1290,9 +1300,17 @@ body.no-scroll {
   margin-right: 0;
 }
 
-.support {
-  padding-top: 80px;
-  padding-bottom: 150px;
+@media screen and (max-width: 767px) {
+  .support {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .support {
+    padding-top: 80px;
+    padding-bottom: 150px;
+  }
 }
 
 .support__title {
@@ -1362,24 +1380,31 @@ body.no-scroll {
   }
 }
 
-.support__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 50px 40px;
-  gap: 15px;
-  width: 328px;
-  height: 333px;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
-          box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+@media screen and (max-width: 767px) {
+  .support__item {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .support__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 50px 40px;
+    gap: 15px;
+    width: 328px;
+    height: 333px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+            box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  }
 }
 
 .support__link {
@@ -1604,6 +1629,10 @@ body.no-scroll {
   margin: 0 2px 0 2px;
   -webkit-animation: Scale 0.7s ease infinite alternate;
           animation: Scale 0.7s ease infinite alternate;
+}
+
+.footer__github {
+  color: #252b42;
 }
 
 .js-backdrop {
