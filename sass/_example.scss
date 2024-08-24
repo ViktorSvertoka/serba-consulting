@@ -382,7 +382,9 @@ body.no-scroll {
 
 .company {
   @media screen and (max-width: 767px) {
-    padding-top: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: $support-bg-color;
   }
 
   @media screen and (min-width: 768px) {
