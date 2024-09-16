@@ -1078,6 +1078,7 @@ body.no-scroll {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 30px;
   }
 }
 
@@ -1112,15 +1113,11 @@ body.no-scroll {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 230px;
-    height: 340px;
+    width: 410px;
+    height: 480px;
     background-color: #ffffff;
     -webkit-box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
             box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
-    margin-right: 40px;
-  }
-  .practice__item--pseudo:last-child {
-    margin-right: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1135,20 +1132,16 @@ body.no-scroll {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 230px;
-    height: 340px;
+    width: 410px;
+    height: 480px;
     background-color: #ffffff;
     -webkit-box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
             box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
-    margin-right: 40px;
-  }
-  .practice__item--pseudo:last-child {
-    margin-right: 0;
   }
 }
 
 .practice__wrap {
-  padding: 30px 30px;
+  padding: 20px 20px 0 20px;
 }
 
 .practice__quote {
@@ -1156,7 +1149,6 @@ body.no-scroll {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.1px;
-  margin-bottom: 15px;
 }
 
 .practice__slogan {
@@ -1165,6 +1157,7 @@ body.no-scroll {
   line-height: 1.43;
   letter-spacing: 0.2px;
   color: #737373;
+  margin-bottom: 10px;
 }
 
 .practice__image {
