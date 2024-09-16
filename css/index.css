@@ -766,8 +766,6 @@ body.no-scroll {
 
 @media screen and (max-width: 767px) {
   .choose__subtitle {
-    width: 230px;
-    height: 80px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.43;
@@ -781,8 +779,6 @@ body.no-scroll {
 }
 @media screen and (min-width: 768px) {
   .choose__subtitle {
-    width: 511px;
-    height: 40px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.43;
@@ -796,8 +792,6 @@ body.no-scroll {
 }
 @media screen and (min-width: 1200px) {
   .choose__subtitle {
-    width: 511px;
-    height: 40px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.43;
@@ -1322,8 +1316,6 @@ body.no-scroll {
 
 @media screen and (max-width: 767px) {
   .support__subtitle {
-    width: 320px;
-    height: 40px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.43;
@@ -1337,8 +1329,6 @@ body.no-scroll {
 }
 @media screen and (min-width: 1200px) {
   .support__subtitle {
-    width: 470px;
-    height: 40px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 110px;
