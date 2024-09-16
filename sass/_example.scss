@@ -1307,3 +1307,40 @@ body.no-scroll {
 .footer__github {
   color: $button-color1;
 }
+
+/* Dropdown  */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown__content {
+  display: none;
+  position: absolute;
+  background-color: $white-bg-color;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 220px;
+}
+
+.dropdown__content p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.2px;
+  color: $main-text-color;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown__content p:hover {
+  color: $link-color1;
+  background-color: rgba(147, 143, 143, 0.2);
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown__content {
+  display: block;
+}
