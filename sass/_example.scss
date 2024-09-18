@@ -1284,11 +1284,40 @@ body.no-scroll {
 .footer__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .footer__wrap {
   display: flex;
   flex-direction: row;
+  gap: 10px;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -1300,10 +1329,22 @@ body.no-scroll {
   color: $main-text-color;
 }
 
+.footer__button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.2px;
+  color: $button-color1;
+  cursor: pointer;
+}
+
+.footer__button:hover {
+  color: $button-color2;
+}
+
 .footer__list {
   display: flex;
   align-items: center;
-  margin-left: auto;
 }
 
 .footer__link {
