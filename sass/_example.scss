@@ -604,7 +604,6 @@ body.no-scroll {
     text-align: center;
     margin-bottom: 20px;
     width: 260px;
-    height: 114px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -630,8 +629,6 @@ body.no-scroll {
 
 .choose__subtitle {
   @media screen and (max-width: 767px) {
-    // width: 230px;
-    // height: 80px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.43;
@@ -644,8 +641,6 @@ body.no-scroll {
   }
 
   @media screen and (min-width: 768px) {
-    // width: 511px;
-    // height: 40px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.43;
@@ -658,8 +653,6 @@ body.no-scroll {
   }
 
   @media screen and (min-width: 1200px) {
-    // width: 511px;
-    // height: 40px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.43;
@@ -1090,8 +1083,6 @@ body.no-scroll {
   }
 
   @media screen and (min-width: 1200px) {
-    // width: 470px;
-    // height: 40px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 110px;
